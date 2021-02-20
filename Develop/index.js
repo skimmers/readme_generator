@@ -55,13 +55,22 @@ inquirer
             message: 'What are your project questions?',
             name: 'Questions'
         }
-    ]);
+    ])
+    .then(response =>{
+        console.log(response);
+        fs.writeFile("newREADME.md", generateMarkdown(response), function(error) {
+            if(error) {
+                return console.log(error);
+            }
+            console.log('Your README had been GENERATED!');
+        });
+    });
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+//function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+//function init() {}
 
 // Function call to initialize app
-init();
+//init();
