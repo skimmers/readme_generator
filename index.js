@@ -35,7 +35,7 @@ inquirer
             type: 'list',
             message: 'What is the project license?',
             name: 'license',
-            choices: ["MIT", "Mozilla Public License 2.0", "ISC", "Open Software License 3.0", "zLib License", "Academic Free License v3.0"]
+            choices: ["MIT", "ISC", "zLib License",]
         },
         {
             type: 'input',
@@ -49,8 +49,13 @@ inquirer
         },
         {
             type: 'input',
-            message: 'What are your project questions?',
-            name: 'questions'
+            message: 'What is your github username?',
+            name: 'username'
+        },
+        {
+            type: 'input',
+            message: 'What is your email?',
+            name: 'email'
         }
     ])
     //this initializes the app
