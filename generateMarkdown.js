@@ -5,13 +5,19 @@ const generateMarkdown = (response) => {
   
   ## Title:\n
   ${response.title}\n
+  ![License](https://img.shields.io/badge/License-${response.license}-blue)\n
 
   ## Description:\n
   ${response.description}\n
 
   ## Table of Contents:\n
-  ${response.contents}\n
-  -[Description](#description)
+  - [Description](#description)
+  - [Table of Contents](#contents)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contribution)
+  - [Tests](#tests)
+  - [Questions](#username)
 
   ## Installation:\n
   ${response.installation}\n
@@ -20,7 +26,6 @@ const generateMarkdown = (response) => {
   ${response.usage}\n
 
   ## License:\n
-  I was not able to display the badge. Any tips would help!
   ![License](https://img.shields.io/badge/License-${response.license}-blue)\n
 
   ## Contributing:\n
@@ -33,7 +38,7 @@ const generateMarkdown = (response) => {
   Please see my GitHub page here:
   - [GitHub](https://github.com/${response.username})
   
-  You can also ask me questions by sending an email to: ${response.email},
+  You can also ask me questions by sending an email to: ${response.email}.
 
   `;
 };

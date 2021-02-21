@@ -18,11 +18,6 @@ inquirer
         },
         {
             type: 'input',
-            message: 'What are the table of contents?',
-            name: 'contents'
-        },
-        {
-            type: 'input',
             message: 'What is the project installation instructions?',
             name: 'installation'
         },
