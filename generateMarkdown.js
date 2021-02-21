@@ -26,6 +26,7 @@ const generateMarkdown = (response) => {
   ${response.usage}\n
 
   ## License:\n
+  Please see which license the project is covered:
   ![License](https://img.shields.io/badge/License-${response.license}-blue)\n
 
   ## Contributing:\n
